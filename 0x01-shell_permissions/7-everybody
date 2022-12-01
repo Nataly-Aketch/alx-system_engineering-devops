@@ -1,2 +1,2 @@
 #!/bin/bash
-ugo = rx
+chmod a+x hello
