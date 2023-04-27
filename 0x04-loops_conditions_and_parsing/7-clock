@@ -8,10 +8,10 @@ while [ $m -lt 60 ]; do
 	echo $m
 	if [ $m == 59 ]; then
 		(( h=h+1 ))
+		echo Hour: $h
 		if [ $h == 12 ]; then
 			break
 		fi
-		echo Hour: $h
 		m=0
 	fi
 	(( m=m+1 ))
