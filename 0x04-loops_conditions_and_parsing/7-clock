@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script gives information about a file
+
+h=0
+m=1
+echo Hour: 0
+while [ $m -lt 60 ]; do
+	echo $m
+	if [ $m == 59 ]; then
+		(( h=h+1 ))
+		echo Hour: $h
+		m=0
+	fi
+	if [ $h == 12 ]; then
+		break
+	fi
+	(( m=m+1 ))
+done
