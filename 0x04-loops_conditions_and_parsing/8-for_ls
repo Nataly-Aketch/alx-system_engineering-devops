@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script gives information about a file
+
+for i in *; do
+	j=sed 's/^//'
+	echo $j
+       	#| sed 's/[0-9]//;s/^//'
+done
