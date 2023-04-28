@@ -1,18 +1,13 @@
 #!/usr/bin/env bash
-# This script gives information about a file
+# This script displays time f0r 12 hours 59 minutes
 
 h=0
-m=1
-echo Hour: 0
-while [ $m -lt 60 ]; do
-	echo $m
-	if [ $m == 59 ]; then
-		(( h=h+1 ))
-		echo Hour: $h
-		if [ $h == 12 ]; then
-			break
-		fi
-		m=0
-	fi
-	(( m=m+1 ))
+while [ $h -le 12 ]; do
+	echo Hour: $h
+	m=1
+	while [ $m -lt 60 ]; do
+		echo $m
+		(( m=m+1 ))
+	done
+	(( h=h+1 ))
 done
