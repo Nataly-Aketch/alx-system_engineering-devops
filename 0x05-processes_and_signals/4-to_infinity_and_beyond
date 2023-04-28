@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script prints a string to infinity sleeping for 2 seconds with each iteration
+while [ 1 ]; do
+	echo To infinity and beyond
+	sleep 2
+done
